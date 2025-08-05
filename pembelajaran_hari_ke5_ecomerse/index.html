@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+        select.form-select:invalid {
+            color: grey;
+        }
+
+        select.form-select option {
+            color: grey;
+        }
+
+        select.form-select option[value=""] {
+            color: black;
+        }
+        #pricing .card.align-self-stretch {
+        min-height: 550px;
+      }
+    </style>
+<body>
+    <!-- navigasi -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#git">Get In Touch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-secondary" aria-disabled="true">
+                            Buy Now
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Text dan img-->
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-item-center">
+                <div class="col-md-5">
+                    <div class="display-1">E-book Php</div>
+                    <div class="display-5 text-muted">Belajar Koding Sekarang!</div>
+                    <p class="lead text-muted my-4">
+                        Kalian dapat belajar koding di E-book kmai! Harga Terjangkau.
+                    </p>
+                    <a href="#" class="btn btn-secondary">Buy Now</a>
+                </div>
+                <div class="mt-3 col-md-5 text-center d-none d-md-block">
+                    <img class="img-fluid rounded-circle" src="assets/img/phptoska.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Pricing Section -->
+    <section id="pricing" class="bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Pricings</h2>
+          <p class="lead text-muted">Pilih E-Book yang anda mau!</p>
+        </div>
+        <div class="row justify-content-center gx-2 gy-4 px-3 px-sm-0">
+          <!-- Card Template -->
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div
+              class="card shadow-sm border-0 flex-fill text-center custom-card align-self-center"
+            >
+              <div class="card-body py-4 d-flex flex-column">
+                <div class="mb-3">
+                  <i class="bi bi-book fs-1 text-primary"></i>
+                </div>
+                <h5 class="card-title">Edisi Awal</h5>
+                <p class="text-muted mb-1">E-book download now!</p>
+                <h3 class="text-primary fw-bold my-3">Rp. 40.000,00-</h3>
+                <p class="card-text text-muted flex-grow-1 px-3">
+                  Cocok untuk pemula yang baru ingin belajar dari dasar.
+                </p>
+                <a href="#" class="btn btn-primary mt-3">Beli Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spesial -->
+          <div class="col-12 col-md-4 col-lg-4 d-flex">
+            <div
+              class="card shadow-lg border-primary border-2 flex-fill text-center align-self-stretch"
+            >
+              <div class="card-header bg-primary text-white fw-semibold">
+                🔥 Sangat Populer
+              </div>
+              <div
+                class="card-body py-5 d-flex flex-column justify-content-center"
+              >
+                <div class="mb-3">
+                  <i class="bi bi-star-fill fs-1 text-warning"></i>
+                </div>
+                <h5 class="card-title">Edisi Spesial</h5>
+                <p class="text-muted mb-1">Bonus konten tambahan!</p>
+                <h3 class="text-primary fw-bold my-3">Rp. 35.000,00-</h3>
+                <p class="card-text text-muted flex-grow-1 px-3">
+                  Konten eksklusif tambahan dengan studi kasus real project.
+                </p>
+                <a href="#" class="btn btn-primary mt-3">Beli Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lengkap -->
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div
+              class="card shadow-sm border-0 flex-fill text-center custom-card align-self-center"
+            >
+              <div class="card-body py-4 d-flex flex-column">
+                <div class="mb-3">
+                  <i class="bi bi-bookmark-star fs-1 text-success"></i>
+                </div>
+                <h5 class="card-title">Edisi Lengkap</h5>
+                <p class="text-muted mb-1">Semua bab + bonus</p>
+                <h3 class="text-primary fw-bold my-3">Rp. 50.000,00-</h3>
+                <p class="card-text text-muted flex-grow-1 px-3">
+                  Paket paling lengkap untuk penguasaan PHP secara mendalam.
+                </p>
+                <a href="#" class="btn btn-primary mt-3">Beli Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About US -->
+    <section id="about">
+        <div class="container-md">
+            <div class="text-center">
+                <h2>Isi E-Book nya..</h2>
+                <p class="lead text-muted">Kamu bisa pelajari dengan cepat!</p>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-circle" src="assets/img/phptoska.jpg" alt="" />
+                </div>
+                <div class="col">
+                    <!-- accordion -->
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item’s accordion body.</strong> It
+                                    is shown by default, until the collapse plugin adds the
+                                    appropriate classes that we use to style each element. These
+                                    classes control the overall appearance, as well as the
+                                    showing and hiding via CSS transitions. You can modify any
+                                    of this with custom CSS or overriding our default variables.
+                                    It’s also worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>, though the
+                                    transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item’s accordion body.</strong>
+                                    It is hidden by default, until the collapse plugin adds the
+                                    appropriate classes that we use to style each element. These
+                                    classes control the overall appearance, as well as the
+                                    showing and hiding via CSS transitions. You can modify any
+                                    of this with custom CSS or overriding our default variables.
+                                    It’s also worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>, though the
+                                    transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Review -->
+    <section id="reviews" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Book Reviews</h2>
+                <p class="lead text-muted">Berikut reviews dari para pembeli E-Book</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="pb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                    
+                    <h5 class="mb-1">Udin</h5>
+                    <p class="mb-1">E-Book nya sangat keren!</p>
+                    <small class="text-muted">Review By Samsudin</small>
+
+                    <li class="list-group-item">
+                    <li class="list-group-item">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="mb-1">One Piece</h5>
+                        <p class="mb-1">E-Book buset daah mantap jiwa!</p>
+                        <small class="text-muted">Review By Vicki</small>
+                    <li class="list-group-item">
+                    <li class="list-group-item">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="mb-1">Strategi Mobile Legend</h5>
+                        <p class="mb-1">E-Book nya sangat mantul!</p>
+                        <small class="text-muted">Review By Raven</small>
+                    <li class="list-group-item">
+                    <li class="list-group-item">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h5 class="mb-1">Mancing Lele</h5>
+                        <p class="mb-1">E-Book nya sangat membagongkan!</p>
+                        <small class="text-muted">Review By Sidiq</small></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Get in Touch -->
+     <section id="git" class="mt-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get In Touch</h2>
+          <p class="lead">Jika ada yang ditanyakan, kirim pesan ke kami!</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form action="" method="post">
+            <label for="email" class="form-label">Email</label>
+            <div class="mb-3 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-arrow-up"></i>
+              </span>
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
+            <label for="name" class="form-label">Name</label>
+            <div class="mb-3 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-person-circle"></i>
+              </span>
+              <input class="form-control" type="text" name="name" id="name" />
+            </div>
+            <label for="type-message" class="form-label"
+              >Choose Type Message:</label
+            >
+            <div class="mb-3 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-bullseye"></i>
+              </span>
+            <select class="form-select" name="pertanyaan" id="pertanyaan" required>
+                <option value="">Pilih Pertanyaan</option>
+                <option value="">Pertanyaan 1</option>
+                <option value="">Pertanyaan 2</option>
+              </select>
+            </div>
+            <div class="form-floating mb-3 mt-4">
+              <textarea
+                style="height: 150px"
+                class="form-control"
+                name="pesan"
+                id="pesan"
+                cols="30"
+                rows="10"
+                placeholder="Isi Pesan Anda!"
+              ></textarea>
+              <label for="pesan">Isi Pesan Anda!</label>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-secondary">Kirim</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src = "js-burger-menu.js";></script>
+    </script>
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <nav id="menu">
+      <div class="burger" onclick="togleMenu()">☰</div>
+      <a href="homepage.html">Home</a>
+      <a href="">Download CV</a>
+      <a href="contact.html">Contact</a>
+      <a href="aboutme.html">About Me</a>
+    </nav>
+    <div class="container">
+      <div class="profile-head">
+        <img
+          class="img-profile"
+          src="assets/img/catmc.jpg"
+          alt="profile"
+          width="150"
+          height="150"
+        />
+        <h1>Vicki Maulana, S.Kom</h1>
+      </div>
+      <hr />
+      <div class="overview">
+        <h3>overview</h3>
+        <p>Saya seorang web developer, saat ini belajar HTML</p>
+      </div>
+      <!-- <div class="table">
+      <table border="1" cellpadding="10" style="margin: auto;">
+        <tr>
+          <th>Skill</th>
+          <th>Pengalaman</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Pelatihan PPKD angkatan 1 2019</td>
+          <tr>
+          </tr>
+          <td>Konfigurasi Komputer</td>
+          <td>IT Support di kementrian Kanwil Agama RI</td>
+          <tr></tr>
+          <td>CSS</td>
+          <td>Pelatihan SIM A jakarta Pusat</td>
+          <tr></tr>
+          <td>JavaScript</td>
+          <td>Sate Ayam Madura </td>
+        </tr> -->
+      <div class="container-box">
+        <div class="box">
+          <h3>Skil</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Pengalaman</h3>
+          <ul>
+            <li>Pelatihan PPKD Angkatan 1 tahun 2019</li>
+            <li>Pelatihan SIM A Jakarta Pusat</li>
+            <li>IT support di Kanwil kementrian agama RI</li>
+          </ul>
+        </div>
+        <footer>
+          <p>Copyright 2025 &COPY; Vicki Maulana</p>
+        </footer>
+        <script>
+          function togleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

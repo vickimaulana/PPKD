@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post" onsubmit="return false">
+      <label for="">Nilai 1:</label><br />
+      <input type="number" id="nilai1" /><br />
+      <label for="">Nilai 2:</label><br />
+      <input type="number" id="nilai2" /><br />
+      <select name="" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+
+      <button type="submit" onclick="hitung()">Hitung</button>
+      <!-- <button type="submit" onclick="kurang()">Kurang</button>
+      <button type="submit" onclick="bagi()">Bagi</button>
+      <button type="submit" onclick="kali()">Kali</button> -->
+      <button type="reset">Ulang</button>
+    </form>
+
+    <h1 id="hasil"></h1>
+    <script>
+      function hitung() {
+        let nilai1 = parseFloat(document.querySelector("#nilai1").value);
+        let nilai2 = parseFloat(document.querySelector("#nilai2").value);
+        let operator = document.querySelector("#operator").value;
+        let hasil;
+
+        switch (operator) {
+          case "+":
+            hasil = nilai1 + nilai2;
+            break;
+          case "-":
+            hasil = nilai1 - nilai2;
+            break;
+          case "*":
+            hasil = nilai1 * nilai2;
+            break;
+          case "/":
+            hasil = nilai1 / nilai2;
+            break;
+          default:
+            alert("Operator Tidak Valid");
+            break;
+        }
+        console.log(hasil);
+      }
+      // function tampilkanHasil(hasil) {
+      //   document.getElementById("hasil").innerText = "Hasil: " + hasil;
+      // }
+      // let nilai, nilai2;
+      // function deklarasi() {
+      //   nilai1 = parseFloat(document.querySelector("#nilai1").value);
+      //   nilai2 = parseFloat(document.querySelector("#nilai2").value);
+      //   if (isNaN(nilai1) || isNaN(nilai2)) {
+      //     alert("Mohon masukkan angka yang valid.");
+      //     return null;
+      //   }
+      // }
+      // function hitung() {
+      //   deklarasi();
+      //   let hitung = nilai1 + nilai2;
+      //   console.log(hitung);
+      //   tampilkanHasil(hitung);
+      // }
+      // function kurang() {
+      //   deklarasi();
+      //   let hitung = nilai1 - nilai2;
+      //   console.log(hitung);
+      //   tampilkanHasil(hitung);
+      // }
+      // function bagi() {
+      //   deklarasi();
+      //   let hitung = nilai1 / nilai2;
+      //   console.log(hitung);
+      //   tampilkanHasil(hitung);
+      // }
+      // function kali() {
+      //   deklarasi();
+      //   let hitung = nilai1 * nilai2;
+      //   console.log(hitung);
+      //   tampilkanHasil(hitung);
+      // }
+    </script>
+  </body>
+</html>

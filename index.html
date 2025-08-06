@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile Vicki Maulana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light .bg-light">
+            <!--container ada fluid dan fix, yang fix bisa langsung pake container  -->
+            <div class="container">
+                <a class="navbar-brand" href=""><img src="assets/img/6578857288113ef49f4fb09a_Logo.png"
+                        style="width: 50%;" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- buat navbar jadi ke kanan itu pake ms kalo defaultnya kekiri itu me-->
+                    <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Feature</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="btn btn-success" style="background-color: #4caf4f;"> Register Now <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <section id="home" class="hero-section">
+            <!-- carausel -->
+            <div class="container">
+                <div class="row">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <!-- slide 1 -->
+                        <div class="carousel-inner bg">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h1 class="display-4 fw-bold mb-4 text-black">lessons and insights
+                                        </h1>
+                                        <h1 class="display-4 fw-bold mb-4 text-success">From 8 Years
+                                        </h1>
+                                        <p class="lead mb-4 text-justify text-muted">Where to grow your business as a
+                                            photographer: site or social media?</p>
+                                        <a style="background-color: #4caf4f" href="register-now"
+                                            class="btn btn-success btn-lg">Register</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/Illustration HD.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h1 class="display-4 fw-bold mb-4 text-black">lessons and insights
+                                        </h1>
+                                        <h1 class="display-4 fw-bold mb-4 text-success">From 8 Years
+                                        </h1>
+                                        <p class="lead mb-4 text-justify text-muted">Where to grow your business as a
+                                            photographer: site or social media?</p>
+                                        <a style="background-color: #4caf4f" href="register-now"
+                                            class="btn btn-success btn-lg">Register</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/Illustration HD.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h1 class="display-4 fw-bold mb-4 text-black">lessons and insights
+                                        </h1>
+                                        <h1 class="display-4 fw-bold mb-4 text-success">From 8 Years
+                                        </h1>
+                                        <p class="lead mb-4 text-justify text-muted">Where to grow your business as a
+                                            photographer: site or social media?</p>
+                                        <a style="background-color: #4caf4f" href="register-now"
+                                            class="btn btn-success btn-lg">Register</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/Illustration HD.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+        </section>
+
+        <!-- our clients -->
+        <section id="features" class="page-section section-padding">
+            <div class="container">
+                <!-- Our Clients -->
+                <div class="row">
+                    <div class="col-lg-12 fade-in mb-5">
+                        <h2 class="section-title fade-in text-center">Our Client</h2>
+                        <p class="lead text-sm fade-in text-center">
+                            We have been working with some Fortune 500+ clients
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center fade-in mb-5 ">
+                    <div class="col-lg fade-in">
+                        <img src="./assets/img/Logo1.png" style="width: 50px;" alt="" />
+                    </div>
+                    <div class="col-lg fade-in">
+                        <img src="./assets/img/Logo2.png" style="width: 50px;" alt="" />
+                    </div>
+                    <div class="col-lg fade-in">
+                        <img src="./assets/img/Logo3.png" style="width: 50px;" alt="" />
+                    </div>
+                    <div class="col-lg fade-in">
+                        <img src="./assets/img/Logo4.png" style="width: 50px;" alt="" />
+                    </div>
+                    <div class="col-lg fade-in">
+                        <img src="./assets/img/Logo5.png" style="width: 50px;" alt="" />
+                    </div>
+                    <div class="col-lg fade-in">
+                        <img src="./assets/img/Logo6.png" style="width: 50px;" alt="" />
+                    </div>
+                    <div class="col-lg fade-in">
+                        <img src="./assets/img/Logo7.png" style="width: 50px;" alt="" />
+                    </div>
+                </div>
+
+                <!-- end Our Clients -->
+
+                <!-- Manage your entire commounity in a single system -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 fade-in mb-5 text-center">
+                            <h2 class="section-title fade-in text-center"> Manage your entire commounity in a single
+                                system</h2>
+                            <p class="lead text-sm fade-in text-center">
+                                Who is Nextcent suitable for?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-4 ">
+                            <div class="card ">
+                                <center>
+                                    <img src="assets/img/Icon.svg" class="" width="30%" alt="...">
+                                </center>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Membership Organisations</h5>
+                                    <p class="card-text text-center">Our membership management software provides full
+                                        automation of membership renewals and payments.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 justify-content-center">
+                            <div class="card">
+                                <center>
+                                    <img src="assets/img/Icon (1).svg" class="" width="30%" alt="...">
+                                </center>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">National Associations</h5>
+                                    <p class="card-text text-center">Our membership management software provides full
+                                        automation of membership renewals and payments.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div class="card">
+                                <center>
+                                    <img src="assets/img/Icon (3).svg" width="30%" class="" alt="...">
+                                </center>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Clubs And Groups</h5>
+                                    <p class="card-text text-center">Our membership management software provides full
+                                        automation of membership renewals and payments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- the unseen start -->
+                    <div class="row ">
+                        <div class="col-lg-6">
+                            <img src="assets/img/Frame 35.svg" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="mt-5">The unseen of spending three years at Pixelgrade </h1>
+                            <p class="lead mb-4 text-justify text-muted">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+                                Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis.
+                                Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam
+                                vitae, tempus sem. Donec elementum pulvinar odio.</p>
+                            <a href="register-now" class="btn btn-success btn-lg">Learn More</a>
+                        </div>
+                    </div>
+                    <!-- the unseen end -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light">
+            <!-- info data -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="display-6 fw-semibold mb-4 text-black">Helping a local
+                        </h1>
+                        <h1 class=" display-6 fw-semibold mb-4 text-success">business reinvent itself
+                        </h1>
+                        <p class="lead mb-4 text-justify text-muted">We reached here with our hard work and dedication
+                        </p>
+                    </div>
+                    <div class="col-lg-6 d-flex gap-2">
+                        <div class="row">
+                            <div>
+
+                                <img src="./assets/img/logo person dempet.svg" style=width:50px;
+                                    class="img-fluid custom-img-size-business" alt="Members" />
+                                <div>
+                                    <h4 class="display-7 fw-bold mb-0">2,245,341</h4>
+                                    <p class="lead text-muted mb-0">Members</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/img/klik jari.svg" style=width:50px;
+                                    class="img-fluid custom-img-size-business" alt="Members" />
+                                <div>
+                                    <h4 class="display-7 fw-bold mb-0">828,867</h4>
+                                    <p class="lead text-muted mb-0">Event Bookings</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+
+                                <img src="./assets/img/gambreng.svg" style=width:50px;
+                                    class="img-fluid custom-img-size-business" alt="Members" />
+                                <div>
+                                    <h4 class="display-7 fw-bold mb-0">46,328</h4>
+                                    <p class="lead text-muted mb-0">Clubs</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/img/dompet.svg" style=width:50px;
+                                    class="img-fluid custom-img-size-business" alt="Members" />
+                                <div>
+                                    <h4 class="display-7 fw-bold mb-0">1,926,436</h4>
+                                    <p class="lead text-muted mb-0">Payments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- section data selesai -->
+
+                <!-- section registrasi -->
+            </div>
+    </div>
+    </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img style="" src="assets/img/pana.svg" class="d-block w-100" alt="...">
+
+                </div>
+                <div class="col-md-6">
+                    <h1 class="mt-5">The unseen of spending three years at Pixelgrade </h1>
+                    <p class="lead mb-4 text-justify text-muted mt-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+                        Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis.
+                        Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam
+                        vitae, tempus sem. Donec elementum pulvinar odio.</p>
+                    <a href="register-now" class="btn btn-success btn-lg">Learn More</a>
+                </div>
+            </div>
+            <!-- end regristrasi-->
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- section lambang hitam -->
+    <section id="blog" class=" section-padding bg-light">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-lg-4 text-end">
+                    <img width="350" height="350" src="assets/img/earphone.png" class="" alt="...">
+                </div>
+                <div class="col-md-7 mt-3">
+                    <p class="text-secondary">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem
+                        dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare,
+                        tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit
+                        at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis
+                        tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
+                        potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio
+                        neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit
+                        amet magna.</p>
+
+                    <h5 class="text-success fw-bold mb-0">Tim Smith</h5>
+                    <p class="text-muted small">British Dragon Boat Racing Association</p>
+
+
+                    <div class="d-flex align-items-center justify-content-between align-items-center flex-wrap mt-4">
+                        <div class="d-flex justify-content-lg-end gap-5 flex-wrap ">
+                            <!-- Logo Customers -->
+                            <img src="assets/img/Logo1biru (2).png" alt="Logo 1" width="32">
+                            <img src="assets/img/Logo2.png" alt="Logo 2" width="32">
+                            <img src="assets/img/Logo3.png" alt="Logo 3" width="32">
+                            <img src="assets/img/Logo4.png" alt="Logo 4" width="32">
+                            <img src="assets/img/Logo5.png" alt="Logo 4" width="32">
+                            <img src="assets/img/Logo6.png" alt="Logo 5" width="32">
+
+                        </div>
+                        <!-- Meet All Customers -->
+                        <div class="d-flex align-items-center ms-5 gap-2">
+                            <span class="text-success fw-bold d-flex justify-content-lg-end">Meet all
+                                customers</span>
+                            <i class="bi bi-arrow-right text-success fs-5"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section hitam -->
+    <!-- section gambar blog -->
+    <section>
+        <div class="container">
+            <div class="text-center mb-5">
+                <h4 class="display-6 fw-semibold mb-3">
+                    Caring is the new marketing
+                </h4>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <p class="lead text-muted">
+                            The Nextcent blog is the best place to read about the latest
+                            membership insights, trends and more. See who's joining the
+                            community, read about how our community are increasing their
+                            membership income and lot's more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="mx-auto" style="max-width: 400px;">
+                        <div class="position-relative">
+                            <img src="assets/img/blog1.jpg" class="img-fluid rounded-4 w-100" alt="">
+                        </div>
+                        <div class="card shadow overlay-card rounded-4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-3 fs-6">Creating Streamlined Safeguarding Process with OneRem
+                                </h5>
+                                <a href="" class="text-decoration-none fw-medium" style="color: #4caf4f;">Readmore <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mx-auto" style="max-width: 400px;">
+                        <div class="position-relative">
+                            <img src="assets/img/blog2.jpg" class="img-fluid rounded-4 w-100" alt="">
+                        </div>
+                        <div class="card shadow overlay-card rounded-4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-3 fs-6">What are your safeguarding responsibilities and how can
+                                    you manage them?</h5>
+                                <a href="" class="text-decoration-none fw-medium" style="color: #4caf4f;">Readmore <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mx-auto" style="max-width: 400px;">
+                        <div class="position-relative">
+                            <img src="assets/img/blog3.jpg" class="img-fluid rounded-4 w-100" alt="">
+                        </div>
+                        <div class="card shadow overlay-card rounded-4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-3 fs-6">Revamping the Membership Model with Triathlon Australia
+                                </h5>
+                                <a href="" class="text-decoration-none fw-medium" style="color: #4caf4f;">Readmore <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 text-center col-md-5 gap-3">
+                    <h1 class="text-bold" style="font: size 600px;">Pellentesque suscipit fringilla libero eu.</h1>
+                    <p> <a href="" style="background-color: #4caf4f;" class="btn btn-success color="> Get a Demo <i
+                                class="bi bi-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end sesi blog -->
+
+    <!-- section footer -->
+    <footer class="footer bg-black gap-2 text-white ">
+        <div class="container gap-2  text-decoration-none">
+            <div class="row ">
+                <div class="col-md-3 mb-4 ">
+                    <h5 class="fw-bold"> <img src="assets/img/footer logo.png" alt="">
+                    </h5>
+                    <p class="small">Copyright &copy; 2020 Landify UI Kit.<br>All rights reserved</p>
+                    <div class="d-flex gap-3 text-decoration-none ">
+                        <a href="#"><i clas style="color: azure;" class="bi bi-instagram"></i></a>
+                        <a href="#"><i style="color: azure;" class="bi bi-dribbble"></i></a>
+                        <a href="#"><i style="color: azure;" class="bi bi-twitter"></i></a>
+                        <a href="#"><i style="color: azure;" class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Company</h6>
+                    <ul class=" list-unstyled text-decoration-none">
+                        <li><a class="text-decoration-none" style="color: azure;" href="#">About us</a></li>
+                        <li><a class="text-decoration-none" style="color: azure;" href="#">Blog</a></li>
+                        <li><a class="text-decoration-none" style="color: azure;" href="#">Contact us</a></li>
+                        <li><a class="text-decoration-none" style="color: azure;" href="#">Pricing</a></li>
+                        <li><a class="text-decoration-none" style="color: azure;" href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Support</h6>
+                    <ul class="list-unstyled text-decoration-none">
+                        <li><a class="text-decoration-none" style="color: azure;" href="#">Help center</a></li>
+                        <li><a class="text-decoration-none" style="color: azure;" href="#">Terms of service</a></li>
+                        <li><a class="text-decoration-none" style="color: azure;" href="#">Legal</a></li>
+                        <li><a class="text-decoration-none" style="color: azure;" href="#">Privacy policy</a></li>
+                        <li><a class="text-decoration-none" style="color: azure;" href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 md-5">
+                    <h3 class="fw-bold mb-3 display-8">Stay up to date</h3>
+                    <div class="position-relative input-group">
+                        <input type="email" class="input_email form-control rounded-start rounded-end pe-5"
+                            placeholder="Your email address" />
+                        <i class="bi bi-send position-absolute top-50 end-0 translate-middle-y me-3 text-muted"
+                            style="pointer-events: none"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
